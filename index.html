@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>sticky navebar</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+        <div class="logo"><a href="#">TOLLKIT</a></div>
+          <ul class="menu_list">
+            <div class="ikon cancel_btn">
+              <i class="fa-solid fa-xmark"></i>
+            </div>    
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+            <div class="ikon menu_btn">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </div>   
+    </div>
+  </nav>
+<div><img src="professional coder image.jpg" alt="" srcset="">
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis corrupti architecto nobis possimus aperiam totam ipsam corporis, ex qui temporibus autem, minima, deleniti tempora officia. Rerum veritatis, eius fugit assumenda sunt dolores placeat saepe, hic nisi, necessitatibus aperiam soluta cupiditate eveniet minus atque quo exercitationem voluptatum natus provident id voluptatibus laborum ducimus. Tempora cum totam minima eius corporis saepe laudantium distinctio culpa consequatur tenetur. Saepe alias omnis voluptates, animi sunt ea et. Neque maiores, quis nihil fugit, porro sapiente expedita perferendis cumque quo optio laudantium, fuga quia eligendi sed consectetur repudiandae blanditiis. Nesciunt iste, ad in tempore eum exercitationem nostrum provident enim, fuga architecto ex eligendi eos magnam harum! Debitis, neque velit deserunt odio saepe aut, cum quidem quo aspernatur beatae vel quis aliquid odit ea quod adipisci autem doloremque praesentium deleniti amet! Quaerat assumenda perspiciatis nisi molestias autem aliquid obcaecati quo, at, consectetur perferendis asperiores doloribus placeat accusamus voluptates, expedita fugiat. Eius magnam quos odit maxime, eos dolor inventore eligendi numquam facilis esse dignissimos aperiam accusamus, omnis deserunt saepe id voluptas reiciendis repellendus, ducimus voluptates laudantium molestiae ullam praesentium. Laudantium nisi rerum neque facere ex aut, quas fuga, sunt ducimus fugit atque error quo expedita eius labore alias officia consequuntur, ipsam officiis earum tempora blanditiis eaque. Iure, molestiae! Id, vel aliquam veritatis atque, nam exercitationem inventore sequi voluptatem maxime deserunt, quasi ea dolorem itaque accusamus totam quam fugit. Quasi excepturi sed fugiat, vitae velit maxime, dolore nulla sapiente nostrum modi similique veritatis autem qui officiis reiciendis natus quos iste aut! Culpa provident, esse rerum nisi similique vitae aut at fugit voluptates fuga nesciunt quae quod, quisquam, quis sequi. Tempora velit dolor alias soluta, ut amet sed ipsum odit dolorem quam voluptates hic molestias similique nobis facilis at deserunt expedita sunt eos ex impedit repellat labore? Iusto, officia temporibus.</h1>
+</div>
+<script>
+  const navber = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu_list");
+    const menubtn = document.querySelector(".menu_btn");
+    const cancelbtn= document.querySelector(".cancel_btn");
+    menubtn.onclick = ()=>{
+      menu.classList.add("active");
+
+    }
+    cancelbtn.onclick = ()=>{
+      menu.classList.remove("active");
+    }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navber.classList.add("sticky") : navber.classList.remove("sticky");
+  }
+</script>
+<script src="style.js"></script>
+</body>
+</html>
